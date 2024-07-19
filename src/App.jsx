@@ -45,13 +45,13 @@ function App() {
   return (
     <div className="data-table">
       <h2>Employee Data Table</h2>
-      <div className="table-container">
-        <div className="table-head">
-          <h3 className="id">ID</h3>
-          <h3 className="name">Name</h3>
-          <h3 className="email">Email</h3>
-          <h3 className="role">Role</h3>
-        </div>
+      <table className="table-container">
+        <tr className="table-head">
+          <th className="id">ID</th>
+          <th className="name">Name</th>
+          <th className="email">Email</th>
+          <th className="role">Role</th>
+        </tr>
         <table className="data-render">
           {filteredUsers.map((ele) => (
             <Table1
@@ -63,7 +63,7 @@ function App() {
             />
           ))}
         </table>
-      </div>
+      </table>
       <div className="btn-comp">
         <button
           style={{
