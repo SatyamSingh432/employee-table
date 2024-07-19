@@ -75,9 +75,20 @@ function App() {
           }}
           onClick={preHandler}
         >
-          Prev
+          Previous
         </button>
-        <p>{page}</p>
+        <p
+          style={{
+            height: "30px",
+            width: "30px",
+            backgroundColor: "#0c964ac2",
+            borderRadius: "5px",
+            alignContent: "center",
+            paddingLeft: "17px",
+          }}
+        >
+          {page}
+        </p>
         <button
           style={{
             height: "30px",

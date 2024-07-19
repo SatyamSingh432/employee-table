@@ -35,11 +35,11 @@
 }
 .id {
   margin-left: 20px;
-  width: 180px;
+  width: 100px;
 }
 .name {
   width: 250px;
 }
 .email {
-  width: 350px;
+  width: 300px;
 }
