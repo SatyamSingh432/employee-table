@@ -4,9 +4,7 @@ import { useEffect, useState } from "react";
 import Table1 from "./compoents/Table";
 
 function App() {
-  const [userData, setUserData] = useState([
-    { id: 0, name: "satyam", email: "satyam@123", role: "member" },
-  ]);
+  const [userData, setUserData] = useState([]);
   const [page, setPage] = useState(1);
 
   const lastIndex = page * 10;
