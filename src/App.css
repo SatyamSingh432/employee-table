@@ -27,6 +27,10 @@
   width: 100%;
   height: 450px;
 }
+.data-render1 {
+  width: 100%;
+  height: 50px;
+}
 .btn-comp {
   display: flex;
   align-items: center;
@@ -35,11 +39,13 @@
 }
 .id {
   margin-left: 20px;
-  width: 100px;
+  width: 150px;
+  align-self: center;
+  justify-self: center;
 }
 .name {
-  width: 200px;
+  width: 250px;
 }
 .email {
-  width: 250px;
+  width: 300px;
 }

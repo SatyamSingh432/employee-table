@@ -45,7 +45,7 @@ function App() {
     <div className="data-table">
       <h2>Employee Data Table</h2>
       <table className="table-container">
-        <thead>
+        <thead className="data-render1">
           <tr className="table-head">
             <th className="id">ID</th>
             <th className="name">Name</th>
