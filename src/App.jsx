@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-key */
 import "./App.css";
 import { useEffect, useState } from "react";
 import Table1 from "./compoents/Table";
@@ -46,13 +45,15 @@ function App() {
     <div className="data-table">
       <h2>Employee Data Table</h2>
       <table className="table-container">
-        <tr className="table-head">
-          <th className="id">ID</th>
-          <th className="name">Name</th>
-          <th className="email">Email</th>
-          <th className="role">Role</th>
-        </tr>
-        <table className="data-render">
+        <thead>
+          <tr className="table-head">
+            <th className="id">ID</th>
+            <th className="name">Name</th>
+            <th className="email">Email</th>
+            <th className="role">Role</th>
+          </tr>
+        </thead>
+        <tbody className="data-render">
           {filteredUsers.map((ele) => (
             <Table1
               key={ele.id}
@@ -62,7 +63,7 @@ function App() {
               role={ele.role}
             />
           ))}
-        </table>
+        </tbody>
       </table>
       <div className="btn-comp">
         <button
