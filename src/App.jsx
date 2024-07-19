@@ -19,12 +19,12 @@ function App() {
           "https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json"
         );
         if (!apiData.ok) {
-          throw new Error("Couldn't connect to server");
+          throw new Error();
         }
         const result = await apiData.json();
         setUserData(result);
       } catch (error) {
-        console.log(error.message);
+        alert("failed to fetch data");
       }
     }
     fetchData();
