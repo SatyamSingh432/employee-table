@@ -1,0 +1,45 @@
+.data-table {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.256);
+  height: 500px;
+  border-bottom: 3px solid #0c964ac2;
+  border-radius: 10px;
+}
+.table-head {
+  display: flex;
+  width: 100%;
+
+  background-color: #0c964ac2;
+  /* margin-left: 20px; */
+  height: 50px;
+  align-items: center;
+}
+.data-render {
+  width: 100%;
+  height: 450px;
+}
+.btn-comp {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  gap: 20px;
+}
+.id {
+  margin-left: 20px;
+  width: 200px;
+}
+.name {
+  width: 300px;
+}
+.email {
+  width: 400px;
+}
