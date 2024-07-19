@@ -54,7 +54,7 @@ function App() {
           <h3 className="email">Email</h3>
           <h3 className="role">Role</h3>
         </div>
-        <div className="data-render">
+        <table className="data-render">
           {filteredUsers.map((ele) => (
             <Table1
               key={ele.id}
@@ -64,7 +64,7 @@ function App() {
               role={ele.role}
             />
           ))}
-        </div>
+        </table>
       </div>
       <div className="btn-comp">
         <button
